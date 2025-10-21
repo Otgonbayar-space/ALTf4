@@ -1,25 +1,45 @@
+let wallet=10
+
+
+
+
 import {rps} from "./rps.js";
 
 import {wq} from "./wq.js";
 
 import {dq} from "./dq.js";
 
-const quit = () => {
-    console.log("GoodBye");
-}
-const games = {
-    rps,
-    wq,
-    dq,
-    quit
+import {nq} from "./nq.js";
 
 
-};
+
+
+
+
+
 
 
 const resultArray =[];
+ 
 let currentGame ="";
-const playGAme = () => {
+
+const playGame = () => {
+ 
+const games = {
+    rps,
+    dq,
+    nq,
+    wq,
+    
+
+    
+        
+    }
+
+}
+;
+
+
     let gameResult ={};
 
     if (currentGame ) {
@@ -27,13 +47,30 @@ const playGAme = () => {
 
      } else {
         const currentGame = window.prompt("choose your game");
+        
+
+        gameResult = games[currentGame]();
 
      }
-}
+     resultArray.push(gameResult);
 
+     const playAgain = window.prompt(
+        "Dahin togloh bol 1, menu bol 2"
+     );
 
+     if (playAgain === 1) {
+        currentGame = "";
+        return playGame();
 
-games[game]();
+    }
+    else if (playAgain === 2){
+        return playGame();
+    }
+    
+;
+
+playGame();
+console.log(resultArray);
 
 
 
