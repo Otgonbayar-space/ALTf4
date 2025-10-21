@@ -30,14 +30,14 @@ const games = {
     dq,
     nq,
     wq,
-    
+
 
     
         
     }
 
-}
-;
+
+
 
 
     let gameResult ={};
@@ -67,7 +67,7 @@ const games = {
         return playGame();
     }
     
-;
+};
 
 playGame();
 console.log(resultArray);

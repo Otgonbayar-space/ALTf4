@@ -10,9 +10,10 @@ const dq = () => {
   }
   startGAME ();
   If (getRandomNumberOne + getRandomNumberTwo === 7 && getRandomNumberOne + getRandomNumberTwo === 11)
-  { window.alert("you win")
+  { window.alert("you win");
+
   }
-  window.alert("you lost")
+  window.alert("you lost");
 
 }
 

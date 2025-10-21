@@ -4,14 +4,11 @@ export
 
 const nq = () => {
     
-     const computerNumber = () => {
-        return Math.floor(Math.random() * 10) + 1
-     }
+    let computerNumber=Math.floor(Math.random()*10)+1;
 
-     const userNumber = () => {
-        window.prompt( "ta toogoo oruulna uu")
+    let userNumber=window.prompt( "ta toogoo oruulna uu")
         
-        let i = 0
+        let i = 0;
 
         gameStart();
 
@@ -27,9 +24,13 @@ const nq = () => {
         window.alert("userNumber is high")
         userNumber;
         i++;
-        }
+    
+    }
+    if(i === 3) 
+        console.log("You lost!")
+    }
 
-     }
-}
+     
 
-gameStart();
+
+gameStart ();

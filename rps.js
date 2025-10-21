@@ -52,19 +52,19 @@ const startGame = () => {
   } else if (userValueInt === 1 && computerValue === 3) {
     window.alert("You win!" + printResult(userValueInt, computerValue));
     endGameAnswer();
-    wallet++;
+    
   } else if (userValueInt === 2 && computerValue === 1) {
     window.alert("You win!" + printResult(userValueInt, computerValue));
     endGameAnswer();
-    wallet++;
+    
   } else if (userValueInt === 3 && computerValue === 2) {
     window.alert("You win!" + printResult(userValueInt, computerValue));
     endGameAnswer();
-    wallet++;
+    
   } else {
     window.alert("You lost!" + printResult(userValueInt, computerValue));
     endGameAnswer();
-    wallet--;
+    
   }
 };
 
